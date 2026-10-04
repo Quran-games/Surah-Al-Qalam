@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>متاهات نونة · سورة القلم</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Aref+Ruqaa:wght@700&family=Tajawal:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<section id="home" class="screen on" aria-label="القائمة">
+  <div class="hero">
+    <h1>متاهات نونة</h1>
+    <p>نراجع سورة القلم مع النحلة نونة</p>
+    <svg class="trail" viewBox="0 0 800 90" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+      <path d="M40,70 C180,10 300,90 430,45 S650,20 700,40" fill="none" stroke="#24508a" stroke-width="4" stroke-dasharray="2 12" stroke-linecap="round"/>
+      <g transform="translate(720,40) scale(0.62)"> <ellipse cx="-8" cy="-26" rx="20" ry="14" fill="#dff3ff" stroke="#5b8db8" stroke-width="3" transform="rotate(-25 -8 -26)"/> <ellipse cx="14" cy="-26" rx="20" ry="14" fill="#dff3ff" stroke="#5b8db8" stroke-width="3" transform="rotate(25 14 -26)"/> <ellipse cx="0" cy="0" rx="40" ry="27" fill="#ffd23f" stroke="#3a2a10" stroke-width="4"/> <path d="M-12,-25 Q-6,0 -12,25 M6,-26 Q12,0 6,26" stroke="#3a2a10" stroke-width="9" fill="none"/> <circle cx="38" cy="-4" r="17" fill="#ffd23f" stroke="#3a2a10" stroke-width="4"/> <circle cx="44" cy="-8" r="4" fill="#3a2a10"/><path d="M38,4 Q45,9 50,2" stroke="#3a2a10" stroke-width="3" fill="none"/> <circle cx="47" cy="1" r="4" fill="#ff9aa2"/> <path d="M34,-19 Q32,-34 24,-38 M42,-19 Q46,-34 54,-36" stroke="#3a2a10" stroke-width="3" fill="none"/> <circle cx="24" cy="-38" r="4" fill="#3a2a10"/><circle cx="54" cy="-36" r="4" fill="#3a2a10"/> <path d="M-40,0 L-52,0" stroke="#3a2a10" stroke-width="5"/></g>
+    </svg>
+  </div>
+  <div class="stories" id="stories"></div>
+  <p class="note">كل الاختيارات آيات كاملة من سورة القلم بالرسم العثماني. اختار الآية اللي بتيجي بعد اللي قبلها عشان نونة تكمّل طريقها.</p>
+</section>
+
+<section id="play" class="screen" aria-label="اللعب">
+  <div class="bar">
+    <button class="icon" id="back" aria-label="ارجع للقائمة">→</button>
+    <div class="t"><b id="pt"></b><span id="ps"></span></div>
+    <div class="oops" id="oops" aria-live="polite"></div>
+    <button class="icon" id="snd" aria-label="الصوت">🔊</button>
+  </div>
+  <div class="map" id="map"></div>
+  <div class="panel">
+    <div id="ask">
+      <p class="prompt" id="prompt">إيه الآية اللي بعدها؟</p>
+      <div class="choices">
+        <button class="choice A" id="cA"></button>
+        <button class="choice B" id="cB"></button>
+      </div>
+    </div>
+    <div class="say" id="say" aria-live="polite">
+      <div class="ok" id="sayOk">صح! ردّدها معانا</div>
+      <p class="v" id="sayV"></p>
+      <button class="go" id="goBtn" style="display:none">يلا نبدأ</button>
+    </div>
+  </div>
+</section>
+
+<div class="veil" id="veil" role="dialog" aria-modal="true" aria-labelledby="wt">
+  <div class="win">
+    <h3 id="wt">برافو!</h3>
+    <div class="stars" id="wstars"></div>
+    <p id="wp"></p>
+    <div class="row">
+      <button class="go" id="wnext" style="margin:0">المرحلة اللي بعدها</button>
+      <button class="btn2" id="wagain">العبها تاني</button>
+      <button class="btn2" id="whome">القائمة</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
